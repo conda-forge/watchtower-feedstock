@@ -1,6 +1,6 @@
 {% set name = "watchtower" %}
-{% set version = "0.3.3" %}
-{% set sha256 = "ca42e70617a1a35e5dd0663010ef588489a83cfaf273d018b7affaec225c0a54" %}
+{% set version = "0.5.2" %}
+{% set sha256 = "6879239d12196016249dd204f6821f9c845241a3fd2d6e1c0e40fee639fbc96d" %}
 
 package:
   name: {{ name|lower }}
