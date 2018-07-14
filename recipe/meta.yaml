@@ -1,15 +1,13 @@
 {% set name = "watchtower" %}
-{% set version = "0.3.3" %}
-{% set sha256 = "ca42e70617a1a35e5dd0663010ef588489a83cfaf273d018b7affaec225c0a54" %}
+{% set version = "0.5.3" %}
 
 package:
   name: {{ name|lower }}
   version: {{ version }}
 
 source:
-  fn: {{ name }}-{{ version }}.tar.gz
   url: https://github.com/kislyuk/{{ name }}/archive/v{{ version }}.tar.gz
-  sha256: {{ sha256 }}
+  sha256: d47cc132dfbd1d99b9f5d5ae337340ebce315404baae9d8a30228e6bc1bdb2c2
 
 build:
   noarch: python
@@ -18,9 +16,8 @@ build:
 
 requirements:
   host:
-    - pip
     - python
-    - setuptools
+    - pip
   run:
     - python
     - boto3 >=1.3.0
