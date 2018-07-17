@@ -23,14 +23,15 @@ delivery deadline (60 seconds by default).
 Current build status
 ====================
 
-Linux: [![Circle CI](https://circleci.com/gh/conda-forge/watchtower-feedstock.svg?style=shield)](https://circleci.com/gh/conda-forge/watchtower-feedstock)
-OSX: [![TravisCI](https://travis-ci.org/conda-forge/watchtower-feedstock.svg?branch=master)](https://travis-ci.org/conda-forge/watchtower-feedstock)
-Windows: [![AppVeyor](https://ci.appveyor.com/api/projects/status/github/conda-forge/watchtower-feedstock?svg=True)](https://ci.appveyor.com/project/conda-forge/watchtower-feedstock/branch/master)
+All platforms:
+[![noarch](https://img.shields.io/circleci/project/github/conda-forge/watchtower-feedstock/master.svg?label=noarch)](https://circleci.com/gh/conda-forge/watchtower-feedstock)
 
 Current release info
 ====================
-Version: [![Anaconda-Server Badge](https://anaconda.org/conda-forge/watchtower/badges/version.svg)](https://anaconda.org/conda-forge/watchtower)
-Downloads: [![Anaconda-Server Badge](https://anaconda.org/conda-forge/watchtower/badges/downloads.svg)](https://anaconda.org/conda-forge/watchtower)
+
+| Name | Downloads | Version | Platforms |
+| --- | --- | --- | --- |
+| [![Conda Recipe](https://img.shields.io/badge/recipe-watchtower-green.svg)](https://anaconda.org/conda-forge/watchtower) | [![Conda Downloads](https://img.shields.io/conda/dn/conda-forge/watchtower.svg)](https://anaconda.org/conda-forge/watchtower) | [![Conda Version](https://img.shields.io/conda/vn/conda-forge/watchtower.svg)](https://anaconda.org/conda-forge/watchtower) | [![Conda Platforms](https://img.shields.io/conda/pn/conda-forge/watchtower.svg)](https://anaconda.org/conda-forge/watchtower) |
 
 Installing watchtower
 =====================
