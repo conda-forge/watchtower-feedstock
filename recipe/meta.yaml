@@ -1,4 +1,4 @@
-{% set version = "0.7.1" %}
+{% set version = "0.7.2" %}
 
 package:
   name: watchtower
@@ -6,7 +6,7 @@ package:
 
 source:
   url: https://github.com/kislyuk/watchtower/archive/v{{ version }}.tar.gz
-  sha256: a1e61313cdbd63800e4b71dd4f47a8d59e1a5af4948dc754003b03667a72a267
+  sha256: 830a6d66c7eab17e4db567be42bf8ec8c0f7e9cca9841211a9e34e6d8db8f56f
 
 build:
   number: 0
