@@ -9,14 +9,15 @@ source:
   sha256: 86cce2f5d47d68ff4a59d70f824efcf8b0a36b94886ce64b73b0896a261ca7a8
 
 build:
-  number: 0
+  number: 1
   noarch: python
-  script: python -m pip install --no-deps --ignore-installed .
+  script: {{ PYTHON }} -m pip install . --no-deps -vv
 
 requirements:
-  build:
+  host:
     - python
     - pip
+
   run:
     - python
     - boto3 >=1.3.0
@@ -27,7 +28,7 @@ test:
 
 about:
   home: http://github.com/kislyuk/watchtower
-  license: Apache 2.0
+  license: Apache-2.0
   license_family: Apache
   license_file: LICENSE
   summary: 'Python CloudWatch Logging: Log Analytics and Application Intelligence'
