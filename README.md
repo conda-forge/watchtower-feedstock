@@ -5,9 +5,13 @@ Home: http://github.com/kislyuk/watchtower
 
 Package license: Apache-2.0
 
-Feedstock license: BSD-3-Clause
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/watchtower-feedstock/blob/master/LICENSE.txt)
 
 Summary: Python CloudWatch Logging: Log Analytics and Application Intelligence
+
+Development: https://github.com/kislyuk/watchtower
+
+Documentation: https://watchtower.readthedocs.io/
 
 Watchtower is a log handler for Amazon Web Services CloudWatch Logs. CloudWatch
 Logs is a log management service built into AWS. It is conceptually similar to
