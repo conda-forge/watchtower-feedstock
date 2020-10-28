@@ -19,8 +19,8 @@ requirements:
     - pip
 
   run:
-    - python
-    - boto3 >=1.9.253,<2
+    - python >=3.5
+    - boto3 >=1.9.253,< 2
 
 test:
   imports:
