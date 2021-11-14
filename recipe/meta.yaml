@@ -19,7 +19,7 @@ requirements:
     - pip
 
   run:
-    - python >=3.5
+    - python >=3.6
     - boto3 >=1.9.253,<2
 
 test:
