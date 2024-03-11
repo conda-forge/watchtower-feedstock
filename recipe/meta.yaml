@@ -24,8 +24,12 @@ requirements:
     - boto3 >=1.9.253,<2
 
 test:
+  requires:
+    - pip
   imports:
     - watchtower
+  commands:
+    - pip check
 
 about:
   home: http://github.com/kislyuk/watchtower
