@@ -1,13 +1,13 @@
 {% set name = "watchtower" %}
-{% set version = "3.0.1" %}
+{% set version = "3.1.0" %}
 
 package:
   name: watchtower
   version: {{ version }}
 
 source:
-  url: https://github.com/kislyuk/watchtower/archive/v{{ version }}.tar.gz
-  sha256: 1572af8f1d70aebb5d64b42a2e3ce4b73d4498cf980220ccbf6cf2b9bbb2a0aa
+  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/watchtower-{{ version }}.tar.gz
+  sha256: 32eacc51cf40b4989a97a181b27c96333466a46cebfb561636e41bbf400a2d10
 
 build:
   number: 0
@@ -24,8 +24,12 @@ requirements:
     - boto3 >=1.9.253,<2
 
 test:
+  requires:
+    - pip
   imports:
     - watchtower
+  commands:
+    - pip check
 
 about:
   home: http://github.com/kislyuk/watchtower
