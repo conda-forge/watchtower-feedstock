@@ -6,8 +6,8 @@ package:
   version: {{ version }}
 
 source:
-  url: https://github.com/kislyuk/watchtower/archive/v{{ version }}.tar.gz
-  sha256: 5339dbba117efa778d0ec9c4d5988a65cbd05c1e1a850b2f1d6be7d560a6fbcb
+  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/watchtower-{{ version }}.tar.gz
+  sha256: 32eacc51cf40b4989a97a181b27c96333466a46cebfb561636e41bbf400a2d10
 
 build:
   number: 0
