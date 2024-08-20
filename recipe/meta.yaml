@@ -1,5 +1,5 @@
 {% set name = "watchtower" %}
-{% set version = "3.2.0" %}
+{% set version = "3.3.0" %}
 
 package:
   name: watchtower
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/watchtower-{{ version }}.tar.gz
-  sha256: 7d515b2d0ae0d36168d3b32937e7f79c19b3efd25bbd16bcda233a092666b98c
+  sha256: 7ded673fe02aed6387b417cf1a6123448633f85fd3e4eca78ad0088788badb83
 
 build:
   number: 0
