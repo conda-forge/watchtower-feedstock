@@ -6,27 +6,28 @@ package:
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/watchtower-{{ version }}.tar.gz
+  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/watchtower-{{ version }}.tar.gz
   sha256: 5e654f52b54b39e279592d6c18a033b22cfbffda676f5b3cf6dfef712ed5738c
 
 build:
-  number: 0
+  number: 1
   noarch: python
   script: {{ PYTHON }} -m pip install . --no-deps -vv --no-deps --no-build-isolation
 
 requirements:
   host:
-    - python >=3.8
+    - python {{ python_min }}
     - pip
     - setuptools
 
   run:
-    - python >=3.8
+    - python >={{ python_min }}
     - boto3 >=1.9.253,<2
 
 test:
   requires:
     - pip
+    - python {{ python_min }}
   imports:
     - watchtower
   commands:
