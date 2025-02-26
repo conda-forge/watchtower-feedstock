@@ -1,5 +1,5 @@
 {% set name = "watchtower" %}
-{% set version = "3.3.1" %}
+{% set version = "3.4.0" %}
 
 package:
   name: watchtower
@@ -7,10 +7,10 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/watchtower-{{ version }}.tar.gz
-  sha256: 5e654f52b54b39e279592d6c18a033b22cfbffda676f5b3cf6dfef712ed5738c
+  sha256: 7d3c116aff72a73ce8f6fc0addd1d0daa04d3f9d53d87cedca3a5a65a264bf7d
 
 build:
-  number: 1
+  number: 0
   noarch: python
   script: {{ PYTHON }} -m pip install . --no-deps -vv --no-deps --no-build-isolation
 
@@ -18,7 +18,8 @@ requirements:
   host:
     - python {{ python_min }}
     - pip
-    - setuptools
+    - hatchling
+    - hatch-vcs
 
   run:
     - python >={{ python_min }}
